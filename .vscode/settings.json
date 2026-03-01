@@ -10,6 +10,15 @@
             "matchCommandLine": true
         },
         "open": true,
-        "touch": true
+        "touch": true,
+        "/^python3 /Users/chokkyeiei/\\.agents/skills/ui-ux-pro-max/scripts/search\\.py \"exciting news monitor dashboard\" --design-system -p \"Mini Monitor News\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git pull": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true,
+        "git stash": true
     }
 }
