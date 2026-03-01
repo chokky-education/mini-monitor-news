@@ -9,6 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from urllib.parse import quote
+from collections import Counter
 import html
 import re
 import time
@@ -262,6 +263,65 @@ def generate_html(articles_en: list[dict], articles_th: list[dict]) -> str:
     en_count = len(articles_en)
     th_count = len(articles_th)
     total = en_count + th_count
+    
+    # --- Generate Chart Sources ---
+    all_articles = articles_en + articles_th
+    source_counts = Counter([a["source"] for a in all_articles])
+    # หายอดสูงสุดเพื่อทำความยาวของกราฟขีดสุดที่ 100%
+    max_count = max(source_counts.values()) if source_counts else 1
+    top_sources = source_counts.most_common(5) # เอาแค่ 5 อันดับแรก
+    
+    chart_html = ""
+    for source, count in top_sources:
+        width_percent = (count / max_count) * 100
+        chart_html += f"""
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">{html.escape(source)}</span>
+                <span class="text-gray-500 font-semibold">{count} ข่าว</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: {width_percent}%"></div>
+            </div>
+        </div>
+        """
+    
+    dashboard_section = f"""
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Source Chart Widget -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <div class="flex items-center gap-2 mb-4">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-800">สำนักข่าวที่รายงานมากที่สุด</h2>
+                </div>
+                <div>
+                    {chart_html}
+                </div>
+            </div>
+            
+            <!-- Quick Stats Widget -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">{total}</div>
+                    <div class="text-sm font-medium text-gray-500 uppercase tracking-wider">จำนวนข่าวทั้งหมดที่พบ</div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-6 border-t border-gray-100 pt-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-blue-600 mb-1">{en_count}</div>
+                        <div class="text-xs text-gray-500">ข่าวต่างประเทศ</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-green-600 mb-1">{th_count}</div>
+                        <div class="text-xs text-gray-500">ข่าวประเทศไทย</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    """
 
     no_en = '<p class="text-gray-400 text-center py-8">ไม่พบข่าวภาษาอังกฤษที่เกี่ยวข้อง</p>' if en_count == 0 else ""
     no_th = '<p class="text-gray-400 text-center py-8">ไม่พบข่าวภาษาไทยที่เกี่ยวข้อง</p>' if th_count == 0 else ""
@@ -316,19 +376,8 @@ def generate_html(articles_en: list[dict], articles_th: list[dict]) -> str:
         </div>
     </header>
 
-    <!-- Stats Bar -->
-    <div class="max-w-6xl mx-auto px-4 py-4">
-        <div class="flex gap-4 flex-wrap">
-            <div class="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2">
-                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <span class="text-sm text-gray-600">ข่าวสากล (EN): <strong class="text-gray-900">{en_count}</strong></span>
-            </div>
-            <div class="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2">
-                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                <span class="text-sm text-gray-600">ข่าวไทย (TH): <strong class="text-gray-900">{th_count}</strong></span>
-            </div>
-        </div>
-    </div>
+    <!-- Dashboard -->
+    {dashboard_section}
 
     <!-- International News -->
     <main class="max-w-6xl mx-auto px-4 pb-12">
