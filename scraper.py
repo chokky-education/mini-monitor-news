@@ -46,6 +46,12 @@ DIRECT_FEEDS = [
         "lang": "en",
         "keywords": ["iran", "us ", "united states", "american", "tehran", "military"],
     },
+    {
+        "name": "THE STANDARD - World",
+        "url": "https://thestandard.co/category/news/world/feed/",
+        "lang": "th",
+        "keywords": ["สหรัฐ", "อิหร่าน", "iran", "สงคราม", "อิสราเอล"],
+    },
 ]
 
 HEADERS = {
@@ -450,7 +456,10 @@ def main():
         print(f"📡 RSS: {feed_config['name']}")
         articles = fetch_direct_feed(feed_config)
         print(f"   → พบ {len(articles)} ข่าวที่เกี่ยวข้อง")
-        all_en.extend(articles)
+        if feed_config.get("lang") == "th":
+            all_th.extend(articles)
+        else:
+            all_en.extend(articles)
         time.sleep(0.5)
 
     # 4) Thai news scraping
