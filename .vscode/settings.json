@@ -1,0 +1,15 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "mkdir": true,
+        "/^cd \"/Users/chokkyeiei/Desktop/Projects-Dev/Mini monitor news\" && python3 scraper\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd \"/Users/chokkyeiei/Desktop/Projects-Dev/Mini monitor news\" && python3 -c \"\nimport feedparser, requests\n\n# Test Google News RSS\nurl = 'https://news\\.google\\.com/rss/search\\?q=US\\+Iran\\+war&hl=en-US&gl=US&ceid=US:en'\nprint\\('=== Google News RSS ==='\\)\nresp = requests\\.get\\(url, headers=\\{'User-Agent': 'Mozilla/5\\.0'\\}, timeout=10\\)\nprint\\(f'Status: \\{resp\\.status_code\\}'\\)\nprint\\(f'Content length: \\{len\\(resp\\.text\\)\\}'\\)\nprint\\(f'Content\\[:500\\]: \\{resp\\.text\\[:500\\]\\}'\\)\nprint\\(\\)\n\nfeed = feedparser\\.parse\\(resp\\.text\\)\nprint\\(f'Feed entries: \\{len\\(feed\\.entries\\)\\}'\\)\nif feed\\.entries:\n    print\\(f'First entry: \\{feed\\.entries\\[0\\]\\.title\\}'\\)\nprint\\(\\)\n\n# Test BBC RSS\nurl2 = 'https://feeds\\.bbci\\.co\\.uk/news/world/middle_east/rss\\.xml'\nprint\\('=== BBC RSS ==='\\)\nfeed2 = feedparser\\.parse\\(url2\\)\nprint\\(f'Feed entries: \\{len\\(feed2\\.entries\\)\\}'\\)\nif feed2\\.entries:\n    for e in feed2\\.entries\\[:5\\]:\n        print\\(f'  - \\{e\\.title\\}'\\)\n\"\n$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "open": true,
+        "touch": true
+    }
+}
