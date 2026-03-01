@@ -38,29 +38,103 @@
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        อัปเดตล่าสุด: 01/03/2026 05:49:13
+                        อัปเดตล่าสุด: 01/03/2026 05:58:31
                     </div>
                     <div class="text-sm text-gray-400 mt-1">
-                        พบข่าวทั้งหมด 98 รายการ
+                        พบข่าวทั้งหมด 107 รายการ
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Stats Bar -->
-    <div class="max-w-6xl mx-auto px-4 py-4">
-        <div class="flex gap-4 flex-wrap">
-            <div class="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2">
-                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <span class="text-sm text-gray-600">ข่าวสากล (EN): <strong class="text-gray-900">60</strong></span>
+    <!-- Dashboard -->
+    
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Source Chart Widget -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <div class="flex items-center gap-2 mb-4">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-800">สำนักข่าวที่รายงานมากที่สุด</h2>
+                </div>
+                <div>
+                    
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">BBC News - Middle East</span>
+                <span class="text-gray-500 font-semibold">14 ข่าว</span>
             </div>
-            <div class="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2">
-                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                <span class="text-sm text-gray-600">ข่าวไทย (TH): <strong class="text-gray-900">38</strong></span>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100.0%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">THE STANDARD - World</span>
+                <span class="text-gray-500 font-semibold">10 ข่าว</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 71.42857142857143%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">ไทยรัฐ</span>
+                <span class="text-gray-500 font-semibold">9 ข่าว</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 64.28571428571429%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">Al Jazeera</span>
+                <span class="text-gray-500 font-semibold">8 ข่าว</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 57.14285714285714%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-gray-700">Al Jazeera - Middle East</span>
+                <span class="text-gray-500 font-semibold">7 ข่าว</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50.0%"></div>
+            </div>
+        </div>
+        
+                </div>
+            </div>
+            
+            <!-- Quick Stats Widget -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">107</div>
+                    <div class="text-sm font-medium text-gray-500 uppercase tracking-wider">จำนวนข่าวทั้งหมดที่พบ</div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-6 border-t border-gray-100 pt-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-blue-600 mb-1">60</div>
+                        <div class="text-xs text-gray-500">ข่าวต่างประเทศ</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-green-600 mb-1">47</div>
+                        <div class="text-xs text-gray-500">ข่าวประเทศไทย</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
 
     <!-- International News -->
     <main class="max-w-6xl mx-auto px-4 pb-12">
@@ -86,167 +160,27 @@
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
                     CNN
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 05:43</span>
+                <span class="text-sm text-gray-400">2026-03-01 05:50</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQOGt2VThTYWNSTVJoRUV4WElrcHRDa0FwYXU4SXFPcWpKS05jVmNDU1JaR3JFUGJFa2NqeXVQWmlYbmRXOHRnSXgteEY4T0g0ZExMNGMzcWJrN0N2aUJIYl84X1NuNGRWc2FaSGtwSG9LVkRaN3BYbFJndkE2bmtMTUVzSDN4UG9PNFAyUkc2VdIBlAFBVV95cUxOWk5FbVdpQ3BPTXRaUzZKa01qVFkyLW5HMXQ4QjJObHZOUWFLdFdYcVBOLS1CNF8xUDlRRDE1R3BrVFdJTjYwb09NQk42clYtNV96ZHNOZm5jVG9hSEdZczRETHAxY3B1MjZ0M3AyaFBMdzdmcGtLNk5aV2tsYWV4LXhoNXJ1WGdTU2VwT3RmWEdBY1Bn?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNaHpLSER5NWNOUGRWY3dUTklFRkxtU08yb0lVWGhGaXRIMlVNVG1nTjhhOVJkek9YOVZwWjQ0bjI0QUl6ZzdlU25wTzQ3ZjNfX1p2R19BdUlQcDF1MHBYeDZGT0loNkZUbmtLb0RmTVRsVHJpaEkwZVNodmZDMDl2dmdn?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Why are the US and Israel attacking Iran? What we know so far
+                    Who benefits from Trump’s war in Iran? The answer is disturbingly clear
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Why are the US and Israel attacking Iran? What we know so far  Al Jazeera</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Who benefits from Trump’s war in Iran? The answer is disturbingly clear  MS NOW</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Al Jazeera
+                    MS NOW
                 </span>
-                <span class="text-sm text-gray-400">2026-02-28 16:10</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQX2NjdmlRQ2piVE1qSkJSZ0s3RUFLVnRVU1Ixc1VlSk10c2hXNTZUbk9kTVQ4N2xfVWVrVTVQV202RV95dFRERG00WGJ5Yy0xQUxiTnpPTnItTGxTUVhKejg4S0Q0U1o3dFl5clkxYjNUdk13M1FOdDFGbjVqWXJRaVZCWGNKRXJMeHc?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    What to Know About the U.S. Attacks on Iran
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What to Know About the U.S. Attacks on Iran  The New York Times</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    The New York Times
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 04:25</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NkpDQzBBVmNLMEFaNXVCMGJkNVVhNjcxTWVoQmpxRy00cmF2SlRJV2ljazRWdHA4UFBrTjBqVGUyLXN5azJHNU05d2MxM0k0QnJPNG9ob1NiQQ?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    How the world has reacted to US and Israeli strikes on Iran
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">How the world has reacted to US and Israeli strikes on Iran  BBC</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    BBC
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 04:11</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVHUwczJUd2V6Nk5ZaDg2SFZqdmhRNzF6ZEpxT3ZGWDNKRGloQnFoYWpQTVhIcXJ6MzhleXFQTnlCa3VoVURXdnBZN3dZUkYxMTBXSVVQQ0JWUHJaeWtFcHFCd1ExS0hxSnh6X3BsTzQ5WGZ1WVBtYzhMdzdWTHJvYUVvOTZIek9ZOXZj0gGQAUFVX3lxTE8xVzIzSWRUMDN2SDVoRFM2d0xkY0ZaWWhRVFRORjRRUUo2aTdsdHcxTWE0ZUpsQ2lna0NtaUMyTDQtdVB4U18tRXZCVXdOdV95blhrNFlpU18wR2ZkcGdHYnNVTDd2ZzZyWHZkU1NJNzg2Nmg1SEtfWk1hTFJURXdBVlFvVWo1amp5VC1yeUdUXw?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    WATCH: War with Iran | PBS News Special Report
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">WATCH: War with Iran | PBS News Special Report  PBS</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    PBS
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 22:36</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNUo0VmV0akV5dDRHOFRmdzBjcDVVeW9sWDNVZmdPLUY5NzA5MnFEX0lUNlBsMFIwbXpudy1Oa1liRF84VmMwVXZNN25ZS1RIVXFDeXhBZUpyYTFETFVyRVlFNFd5QkJhX1dYbTNEeTBJOE9LS2owVG5pMHk2MU9wOUJqNTRvaWtvZjJfMjVUaExaNEZmRGYyV3J3dkE4UjFVX1NTUjJhZUNmZXlMdXFaNC15UUxZS2JM?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Iran Update Special Report: US and Israeli Strikes, February 28, 2026
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran Update Special Report: US and Israeli Strikes, February 28, 2026  Institute for the Study of War</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Institute for the Study of War
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 17:45</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNT2R4bDFjU19LWF9hQVpXREtXX2l2N1NyU0NRZEFJbDFWQ0M2d2hmN0FSX3UybmFid1c0X3l4aldQaFh0NHZRem12SkltWnF1eDZIa0ZIZWlISlpSNTQ1bUpYcUV3R0RhLWtIYlZCSHUtT3A0V1Nwc2FaTXdKOTh2eFhhSnNaLWxCeGVMZWtkZWM?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Congress rushes to get in the loop as critics denounce Iran strikes
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Congress rushes to get in the loop as critics denounce Iran strikes  Politico</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Politico
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 23:53</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRllvdWJuS1VDdXlXTnVQRlAydWoteGtNczJybkpWdWlXeWZzOUxuTjJQRTRqeVJDNEQzcUp2Y3JVR1ZSOWN1cmY4X3Y2aWFlVG5tWHhkVGlGeTN0aXJDazNhc054cV82a19aVndIcEwxMTN0VUx3NXl4ZzVKZG50ZENfcmFlVDZOaUpMaU04YXV2N25vZTVja1JvaXcybEFhLXNHeHk2SDF0UHZmd2RlVFZLeW1pWmUyZWFn?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Week in Politics: Does Trump have political support for his actions in Iran?
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Week in Politics: Does Trump have political support for his actions in Iran?  NPR</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    NPR
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 12:56</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mVS1uNE1GSE1Ed05YQ0poMDJ1VlJJMUxGZFFMRkc4dHMtSkd4RjhBc3Atbm9WbXhMMjNRSmlKbTVOdzVfSW11VjY5THR6ejJwaUlzbkdKMnNISVhXR3JESNIBZkFVX3lxTE9YLXZvM3p5M3hYTktSazNYN3lKclhDcFZ5bWYwRXZQcVZlZjZpaGxGUGtSamV0SXJLVFJ3cGJHZHRMaE0xa0ZOLWdyQ1RzT19ZSWtMQUhXZWpkNy1pRkhuR3hObkVzZw?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Trump says he&#x27;d &#x27;love not to&#x27; attack Iran, &#x27;but sometimes you have to&#x27;
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Trump says he&#x27;d &#x27;love not to&#x27; attack Iran, &#x27;but sometimes you have to&#x27;  CNBC</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    CNBC
-                </span>
-                <span class="text-sm text-gray-400">2026-02-27 18:05</span>
+                <span class="text-sm text-gray-400">2026-03-01 04:03</span>
             </div>
         </a>
         
@@ -271,102 +205,242 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOR2dVZEhVRnNXUE5kWVVseERRb1dBaGZRV3JGcXd6VUdpQWlrV1l3M0czQ0tJTGJpSzFSdmxpTWUwRjQ2ZW1jRlFNQkI5SU5Sa1p5TlJER09wMjh6Q3RyTkp4dFVZcUZOdHprY01sQ2F4NHM3b2kyQlhoSFFJUWoyMk1ZYl91ZXlqV0tva2VKekNOaFFXT1R2Vkl3?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPd05XdkpJRU95T2FLOUVVT0JLZ2dxZ3JHY3Q5X3I0U1ZuNU1LUFczUTQ4WVZQRF9wNWh4VjRObDR6d0E3OWhJQ2c5SWplMnlTYzh6d0ZzTDlFZFNhN3FmSDNsY2Z4LTFuUEVlNy1tUHc1MXFxenZPODhfSVhJdmc4VEdEYXRISHdtaWw1R3lwWm51Sm5vMXMtS1hOZW5MOUNMTE5PUFUyVHp2RUR3TkHSAbMBQVVfeXFMTTBZZ3laakplVDVMY0R1ZmNlaWxEeElvOHFjNlN1a0h4a0hEWUtreWppdzluY2g3d3FLanBiLTFwaUR3SjhyVVVwOUVfR05rbEJrTkliVWhjMVgyOG1XUTNXZ2J0S29PV3JiSV9wNEd4VC1NVFRFd3RQYy1IVkxteU54QmJuVWZKY19McGp0SUVEM3ZEaHJHUUluWkxkRzZtZTg4RmtsNFNldjZJTlE1WXctNkk?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    What ballistic missiles does Iran have in its arsenal?
+                    Netanyahu’s war? Analysts say Trump’s Iran strikes benefit Israel, not US
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What ballistic missiles does Iran have in its arsenal?  Foundation for Defense of Democracies</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Netanyahu’s war? Analysts say Trump’s Iran strikes benefit Israel, not US  Al Jazeera</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Foundation for Defense of Democracies
+                    Al Jazeera
                 </span>
-                <span class="text-sm text-gray-400">2026-02-28 23:56</span>
+                <span class="text-sm text-gray-400">2026-03-01 02:23</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOZG02SWlvdlB3T09vTGJ3TUFZaXc0ZzU2T0dUTlVOU2t4RDJTTXlOMTVUcHlDSC1sQWpva1c1cXRBZjVyWjh6U0k0Q1RNTGFoRkVCWDE3QlBxUGplVVg2NGRrX0wtNVRzMWpoT3R2VG5kS3VvY0ZfeU8ycjR1MnhMaVc2cHZOa1BxeU1CaTFvNW1JZlA5WVZMMVg5N0llRFk?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NYWZXZTJGRldpaEhOWmJEdHJ1UVlJazB4WXlfa19DbGExX1FDb0xablgzeXNzZHFtazlZSnpTWkFwYWFxRzFPdkI1WlZ5VUY3ZVRHVFozdmU2T2RwRm9CSzh2cFJIdw?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Satellite imagery shows where the U.S. military is positioned near Iran
+                    Why Arab states are terrified of US war with Iran
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Satellite imagery shows where the U.S. military is positioned near Iran  The Washington Post</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Why Arab states are terrified of US war with Iran  Responsible Statecraft</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Responsible Statecraft
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 00:40</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQNnVidlM4Q1ExRDlhX3Y2QWNLbWNTcWx3SDFVaTJ6dkdRZTJjbFlQUHRGNmRxdE5PTjdaQ0ZLRE1LaDZueVBvVmh5TnhrMEFyZ2I5STJEbDFwMkNpYVFKdG1GZUxRYjdwbmVqY1RSTDNMWkxJNndacVdPeDZaTFJiLWtRWTZKbXo2R1ZIQnd4VTNTQU1SVUw1eG05aVk3bjg4eWFacFg3U09Wak44a0E?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    War on Iran: how the US-Israeli bid for regime change unfolded
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">War on Iran: how the US-Israeli bid for regime change unfolded  The Guardian</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    The Guardian
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 03:08</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5FWWlYQ19TQjBUWHpNckVfYkUxa09PRmNfa3BoU21pSHpZSFdPZzlmbWg0WHNtb3Y1ZTJkczNmTlF2Y2p4eFlYRDRRZ3dNbTdFZ0JFWW1Ba0JRN1BCRlcweUJjd05xX3ZxeWxNTlNyRzhPWktS?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Opinion | The rotten case for war with Iran
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Opinion | The rotten case for war with Iran  The Washington Post</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
                     The Washington Post
                 </span>
-                <span class="text-sm text-gray-400">2026-02-03 08:00</span>
+                <span class="text-sm text-gray-400">2026-03-01 00:12</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOU3NYdVQ3LWFJU25NVFdoQ19fMWl6ekVrRkNkVnVMZjVkNXIyZ0VoNmhhWjdBclhIR0k1YmxLeVZyWE02blNteERSVHppN0g3VW11bWRXTXR5NHUtQVZ5N0pNalRpRXQzZHpSM1ZkZDV5OURQdWx0NzRkWWRaa1RESzFKSUVjTmNLVTI4NEZQMmdtNHJaTGdhOElGaHQ4d3pmSnk4UUM3d1dQbzFaWHkybXpLd1o?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNblA1bmxvSmpUSTVoRHZJQmctVm5qX1BEbU5nVG5xa2hWOHlTaXBBQmJXNjFaUmRIU0xJOVVab3BsQmNQcGUtdmswSzU2c2p5ajRybG9PaUt2UFhZQmhjeVpYUUpPWUFKcWFsaG0xV2ZCMm9iNnRRUUdPb29HNHRReFplTFlqZjhOZE9VWHNQbTZzY1BZd2VueXphTDRnOU5kRU5EMk95S3REbnRsTXfSAbMBQVVfeXFMTmdhRWRWbDFSNGJwR3FPdHhBRVFaSnV1bEdvbjdCQ1RaeWpDMFNyQnEyWUJEWWJYN3BWeGUwdjE4SC1QN2RPV3d1ZE5XQ0hnVlZBQnZrazNPR0xzOHFpRXBMa2tfM25jOGZLREFmLUZCd1A3YlJfNE14eExsM1ZEcG9hb040ek15dWVWbEZoOXBpeklrUlBxM3V4ZDhUSDFtbG9NckNGemxLYlNzSzAtQXNuVmM?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    US military action in Iran risks igniting a regional and global nuclear cascade
+                    US strikes on Iran lead to renewed demands for war powers legislation
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US military action in Iran risks igniting a regional and global nuclear cascade  The Conversation</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US strikes on Iran lead to renewed demands for war powers legislation  Al Jazeera</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    The Conversation
+                    Al Jazeera
                 </span>
-                <span class="text-sm text-gray-400">2026-01-29 08:00</span>
+                <span class="text-sm text-gray-400">2026-03-01 01:55</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8zODVzMDNuR3gtUFVXcDNUZUQ0Mnk5N0JSeWZ2RFo1MU5KMHZUd3VYZU8tTndyLXVtalQ0V0FOWTJCWHBqYU8zTVd4UGNXd3hjeExfQXQxMnVROEFycGQ1NGMtX1RYUnFLY2N2dUV4alY?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NkpDQzBBVmNLMEFaNXVCMGJkNVVhNjcxTWVoQmpxRy00cmF2SlRJV2ljazRWdHA4UFBrTjBqVGUyLXN5azJHNU05d2MxM0k0QnJPNG9ob1NiQQ?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    US shoots down Iranian drone as Middle East tensions escalate
+                    How the world has reacted to US and Israeli strikes on Iran
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US shoots down Iranian drone as Middle East tensions escalate  Financial Times</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">How the world has reacted to US and Israeli strikes on Iran  BBC</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Financial Times
+                    BBC
                 </span>
-                <span class="text-sm text-gray-400">2026-02-03 08:00</span>
+                <span class="text-sm text-gray-400">2026-03-01 04:11</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE4xV2R5Z0VNMDlIZ1NERy1IcGtRbEJTajZUWGltWDVlRHQ5ZHRxSWFaSE4yZjBrS1lDYWVHbWJqLUVxR3l0bmZsNzVWVGN1eFh6X2doSEJCaTBjSGRPX1g3RXp2Uzk2MVhlUThhYXV1Z0VMalVFN3FZdVZ5M3I?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1mMElMOThXLU1adXViaXVFU19yZFYyZ184U29LNXFYc2YxYlA4ZWRlMEFkbkxsdmprU0JuVDQyUTBNeFJfYlZYTzFPdDNVUE1hc0hKV1B4MnhMUXVzY2M1QkEtTk1JN1hHeXlsVVlQdFBVcGp2U0xrYzNXWDA3WXPSAYQBQVVfeXFMTmdRZmRPdlg3STRqSGlZTFFLZ0pjY1JrZmtrVEtQN2VOUGZZZFF5dEFXTTZiR2lZdkpzRE91VFFwZThZWE1WQzN2a3luWHJnTFBwUXFvcV9uV3NxenBsMnllQndYNFdkdEF0bjhpRUsySTFMUFFGTV9iWTNDN3ZMXy04WWww?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    6 reasons the U.S. and Iran are on the brink of war
+                    Live Updates: U.S. and Israel attack Iran
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">6 reasons the U.S. and Iran are on the brink of war  Axios</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Live Updates: U.S. and Israel attack Iran  PBS</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Axios
+                    PBS
                 </span>
-                <span class="text-sm text-gray-400">2026-02-18 08:00</span>
+                <span class="text-sm text-gray-400">2026-02-28 14:15</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZUVZ1U2lyeEY3azNwc1BWeHh4T3ZfRXZZNVMwbnZDekM3S0l5aWM0R1dUWXc2Qm10TWd5UnpJNV9CSzZZeE5VdEVYdFJLYi1Yb3VhRWZUaVV1aGVqbXg4YQ?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    What if today&#x27;s Iran is resigned to a long, hellish war with the US?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What if today&#x27;s Iran is resigned to a long, hellish war with the US?  Responsible Statecraft</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Responsible Statecraft
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 21:40</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPdjdzTjNNOW1lcGQ3dWxSLWZOMG5KOVN2bWp6YW9RRVFKeDhhVGJJODZBdjNGdS1LT3dndU9VRFF0S2t2MzBEWlhjemdNRG1rcFpEWkpFMzNlekpYYjFZU2xpeXFqYXFWb1hlODloQm9QWE1XaUJySnhvVFFlNWlKREMzT0FvNGhaZjdEbGZaem1GNHpMRHpfR3FRbEcyNjI1eV9XYkxXdUhtbk00RVdQaHMwQdIBuAFBVV95cUxOd2U1alpxUjFUUkc2SERkbGpsbjFVT0ZnZXNzeTdGMkVmT1J4UEc2bEJzeE9FOEwwNno0Xy1neU9ybEJucGNjNzFzSC0yZ0gzQzItWk16NXpDSTRELXpRNmQySTh1dGZSbFZrRWMxVnJpTmZ2Y0RDUVBpRkUwWnpMaGFfRnZyb2FWSWJmZUEyVTZwWE1nMFlQdlhQLXE3Qm5ZU1M4Uk41RlUxejN5Q1oycHZGNEZEaU1L?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Nine months after 12-day war, US, Israel seek to topple Iran’s leaders
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Nine months after 12-day war, US, Israel seek to topple Iran’s leaders  Al Jazeera</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Al Jazeera
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 17:54</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE55MG5wdTJrMFlNLWRENFBMZEFMcW0yN0E5dE1lajB6eGRWU1JNN2Y0cXhkbGlGdEpTcG1naHdqN00yLThGV3Qzd2RmYWhBa0tfS1I5ejRobjVGZw?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    What is happening in Iran? What we know about US-Israel attack and Tehran response
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What is happening in Iran? What we know about US-Israel attack and Tehran response  BBC</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    BBC
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 03:57</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxONjFDZldnNEU5bVI2Vm1kaHhCbGg2THNFQ2xZVy1MUndTVS16X0ZhQWlKbl8waUh1elEwc3FTbE8xWlBaaWt3Qm5kcFhoVl82NGlaTGpZVUpWZXd2UTdQWEdkSHNJOGFCLUcwQzJhMFAzZXdXNU50M3laNV9XT0R2d0tHUUhaNGp2VzRzakpKa3lSQkpDWlpkQ1hR0gGfAUFVX3lxTE4zNDVOS0hEOE5pd0hLdWtaS0RTWW1EU3duODhWY3Q3LWlSMEUwMElITFl1MzI5TEt2S0FNbERVdWo3NWJrOU5IcUNzR3hQM3VWeGp5ZzBnSlBDSmJoMENGRFRBdkdkMk1lSkkwTlZ6N1gxdW1hYUdWNDNoR19SaHI1MjhHbEFCaktqUjRCbGNPMzNqQ1pTVnM4ZUJDeU5oUQ?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    How have US politicians reacted to the attack on Iran?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">How have US politicians reacted to the attack on Iran?  Al Jazeera</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Al Jazeera
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 23:59</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPN1UxZFU0Mkp4cFY0d3A0bnlyalBMQlVNbk9xanBuUmIyOGIzMHctUW5Fdm5JcWRWa2dobzE5ZmtfcHRxdW9WbE9nRWJ1amM2Z2U2NkhydGxpUQ?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Bowen: A dangerous moment, but US and Israel see opportunity not to be missed
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Bowen: A dangerous moment, but US and Israel see opportunity not to be missed  BBC</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    BBC
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 02:03</span>
             </div>
         </a>
         
@@ -411,26 +485,6 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1mMElMOThXLU1adXViaXVFU19yZFYyZ184U29LNXFYc2YxYlA4ZWRlMEFkbkxsdmprU0JuVDQyUTBNeFJfYlZYTzFPdDNVUE1hc0hKV1B4MnhMUXVzY2M1QkEtTk1JN1hHeXlsVVlQdFBVcGp2U0xrYzNXWDA3WXPSAYQBQVVfeXFMTmdRZmRPdlg3STRqSGlZTFFLZ0pjY1JrZmtrVEtQN2VOUGZZZFF5dEFXTTZiR2lZdkpzRE91VFFwZThZWE1WQzN2a3luWHJnTFBwUXFvcV9uV3NxenBsMnllQndYNFdkdEF0bjhpRUsySTFMUFFGTV9iWTNDN3ZMXy04WWww?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Live Updates: U.S. and Israel attack Iran
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Live Updates: U.S. and Israel attack Iran  PBS</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    PBS
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 14:15</span>
-            </div>
-        </a>
-        
-
         <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQYXltb3pUR3dsWkwxSjk2aGVMRTBwMXF1WHlSS0RwUkVsV05rWldTOU5MMDJSNFpyVm4zbWd6enNhVFczamJEOG1OTFpKNmpINXA0WnlsT0Q1UFBRRHltaUs0RDN4RGNaUXY5RXhGSXUxYXVyNnI1NGJhQTZFbS1DbVlxN3pqcEJNS3Q1R2ZPTG9JWWk2YXFyUFpB?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -447,6 +501,46 @@
                     France 24
                 </span>
                 <span class="text-sm text-gray-400">2026-02-28 20:35</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMikgJBVV95cUxQLS14N25lSkFYa3N3Wjh4bGNZTlZYOVdGeDBGV3M4ejJ0Ul9DRkVuR2lEbHEyMTAtbUFsVW1PbTJ2cy02c1RUM3pEa2M4QVpsaTY2ajZ3ZG9hay1aREhxUjFYTHVaWDc1Z0ozQW5lRkxoMWxUSW1RWUZUNUJOb2VvblBhbVJCZ0U1Mkw2U2pCdXhHek9IY2lobnl3RklEVFF4YmJTLVBob0VuNHB3aDZ6amFYTFhtdllrWE9RcHVLUW52Z0pPOFY2M2xaWEZlS2NVelp5LWtEVThxTjFpSkFRbkVDS0xPeEdJNXZ6MkxBbkdEamxhZkNnUlo1aHltMDB5bEVGcjM2U3czUGZfcHhoSTh3?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    US-Iran Tensions: Why is the US-Israel Attacking Iran? What Started the 2026 War, Which Other Countries are Involved &amp; What Comes Next | Explained
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US-Iran Tensions: Why is the US-Israel Attacking Iran? What Started the 2026 War, Which Other Countries are Involved &amp; What Comes Next | Explained  The Sunday Guardian</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    The Sunday Guardian
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 19:02</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQOGt2VThTYWNSTVJoRUV4WElrcHRDa0FwYXU4SXFPcWpKS05jVmNDU1JaR3JFUGJFa2NqeXVQWmlYbmRXOHRnSXgteEY4T0g0ZExMNGMzcWJrN0N2aUJIYl84X1NuNGRWc2FaSGtwSG9LVkRaN3BYbFJndkE2bmtMTUVzSDN4UG9PNFAyUkc2VdIBlAFBVV95cUxOWk5FbVdpQ3BPTXRaUzZKa01qVFkyLW5HMXQ4QjJObHZOUWFLdFdYcVBOLS1CNF8xUDlRRDE1R3BrVFdJTjYwb09NQk42clYtNV96ZHNOZm5jVG9hSEdZczRETHAxY3B1MjZ0M3AyaFBMdzdmcGtLNk5aV2tsYWV4LXhoNXJ1WGdTU2VwT3RmWEdBY1Bn?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Why are the US and Israel attacking Iran? What we know so far
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Why are the US and Israel attacking Iran? What we know so far  Al Jazeera</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Al Jazeera
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 16:10</span>
             </div>
         </a>
         
@@ -491,6 +585,66 @@
         </a>
         
 
+        <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQeGdaMHg1OEp2S0tzTlJDck5kTkxzNjl5VllIVHRrbkhpOGRLblQweDhacmt1OEJ1cE5MUXRTTGk4bFl6a0dUU1VCYi0wSTB5V0dCMFozVHBCTFo5SGN1YTY1TC1zX2VGUFkwNzZJSk54eW03UW41Y0JGUi1odEh3WnpyQVNmQ2FlTEduNlBURXFjZ2FxSTN0VA?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    &#x27;Secret words&#x27;: What does US want from Iran amid fears of war?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">&#x27;Secret words&#x27;: What does US want from Iran amid fears of war?  USA Today</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    USA Today
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 02:22</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNVFR2NmlkQ2xVVlhzNEVJaFFsX1BJZlhYZ1ctMEx3SW1lcXlMNDNNT1VWZmsySW1qQVlKQXdBdDJTZ3RJVk5TaTdHQ19lY2RkNW1xMFdiV19yWGtBRFhkWS1lcGdpMlpEeThNVi1oQjVraFdUOVBGbzNXcTBsNllPaVhyUllEMU1pcmgwcWtMN2JzXzRsUmFBNTd1OGVJZzl5UDBEVklQSjB3Tloydm81UnNwUlozRDlrMXNiX2dwaw?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Trump Is Potentially Leading the United States Into an Unnecessary War With Iran
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Trump Is Potentially Leading the United States Into an Unnecessary War With Iran  Center for American Progress</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Center for American Progress
+                </span>
+                <span class="text-sm text-gray-400">2026-02-27 14:13</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5CLU9vT3VRdXp1NWRrNlBKemQ5ZGk5dlpzeFlJdXdxdThaTUFXZF9nOWFma3l4NFpiVUc0RGU0QWphcFU4UGhNRnlmNVpNcWFQYVNzWXdqRjVpRkRLZkNhU3Z1Y29NNExjU1BZRGdWYlQ4SUxaRE8zZjNR?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Q&amp;A: Iran and the US are back on the edge of war. What&#x27;s coming?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Q&amp;A: Iran and the US are back on the edge of war. What&#x27;s coming?  ACLED</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    ACLED
+                </span>
+                <span class="text-sm text-gray-400">2026-02-27 15:46</span>
+            </div>
+        </a>
+        
+
         <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPMHpjZXVydWF4YVo1ZVd2ZWtibEpsc1VNTHE2TXk4TUNUaHhBeG1tZ0hKVlFMUmhYMExiVjZPYVNQSlJGNDhSV3Q5Q2ZDcm5mR0Q2eTNmOGFURjRRRFhmZGtGZXNFelZQRTRWdGZWZlpzZ25mLXB0cjlQRTZGallkU2dkSW9obWtFd0FIOE5OMA?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -511,82 +665,42 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NYWZXZTJGRldpaEhOWmJEdHJ1UVlJazB4WXlfa19DbGExX1FDb0xablgzeXNzZHFtazlZSnpTWkFwYWFxRzFPdkI1WlZ5VUY3ZVRHVFozdmU2T2RwRm9CSzh2cFJIdw?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOUG1KcWU1aEdOR29IcWZpOExkWFdmWTRCZDVhVy15QnFGa0UwX1R2b0lrTDZBcU9JYjFkYXo2Qy1VdFROVkVyNW45TmFmN0pXcHpVMVIwNkRnNnlOMU9aLThfb0FoV2JsYzAxR2hnWEd4eFhxOVVsTmYyc1laVlV2TjRLc2owcjh1Y2JNVmRZYlR1d055MnowNWJnRmZ0VGRjYlhuajdn?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Why Arab states are terrified of US war with Iran
+                    Could war between the United States, Israel and Iran begin this weekend?
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Why Arab states are terrified of US war with Iran  Responsible Statecraft</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Could war between the United States, Israel and Iran begin this weekend?  The Times of Israel</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Responsible Statecraft
+                    The Times of Israel
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 00:40</span>
+                <span class="text-sm text-gray-400">2026-02-27 15:28</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE51ZGFKM3lsV2Q0TW8wUVlvNzZzTlU0QUFHYlZxZjAwenZjRlgyMUtRcmNRc3FqN0VvQU5yNkxBVDUtT3VWQWNXQ0Nhakpja1RyQWRydzhvdXBITUVHTUZJWmZlbzYyVmVLY1BzUXhidXJFajhxUTN6cTRodldqUQ?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mRnZJQ0d2X0FWSlNKWl96WU16OWJIODlWWFllbHppSTQ3SzJUTUd0S25VQnNDV0JPYlZReVlqai1DMTlCSHktaDZzd1F5QVlMLUNZbG9sajRUZw?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    PBS News Hour | War with Iran | PBS News Special Report
+                    US-Iran talks end after &#x27;significant progress&#x27;, mediator says
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">PBS News Hour | War with Iran | PBS News Special Report  PBS</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    PBS
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 00:57</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPN1UxZFU0Mkp4cFY0d3A0bnlyalBMQlVNbk9xanBuUmIyOGIzMHctUW5Fdm5JcWRWa2dobzE5ZmtfcHRxdW9WbE9nRWJ1amM2Z2U2NkhydGxpUQ?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Bowen: A dangerous moment, but US and Israel see opportunity not to be missed
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Bowen: A dangerous moment, but US and Israel see opportunity not to be missed  BBC</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US-Iran talks end after &#x27;significant progress&#x27;, mediator says  BBC</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
                     BBC
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 02:03</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9sbWNCNVBlek5WN3o3MXZYbmdVcDBEY0tCRmJOdjR0cDF4UEw5Z2JsR2N3cGNvZm1NWEMtSnltMUhXeXlWcF9BV3Q2OWltQmgxMUZqdHNoQzA1VUtkRl9QMWp6aEttazl0Uy1xamliR2JtUQ?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Iran Says Supreme Leader Khamenei Dead as U.S.-Israeli Attacks Continue: Live Updates
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran Says Supreme Leader Khamenei Dead as U.S.-Israeli Attacks Continue: Live Updates  The New York Times</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    The New York Times
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 05:41</span>
+                <span class="text-sm text-gray-400">2026-02-26 21:43</span>
             </div>
         </a>
         
@@ -595,178 +709,38 @@
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Live Updates: U.S.-Israel strikes killed 40 Iranian leaders, including Khamenei, sources say
+                    Live Updates: U.S.-Israel launch another round of strikes on Iran following Khamenei&#x27;s killing
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Live Updates: U.S.-Israel strikes killed 40 Iranian leaders, including Khamenei, sources say  CBS News</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Live Updates: U.S.-Israel launch another round of strikes on Iran following Khamenei&#x27;s killing  CBS NewsIran live updates: Ayatollah Ali Khamenei is dead, state news media confirms  CNBCIran Confirms </p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
                     CBS News
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 02:57</span>
+                <span class="text-sm text-gray-400">2026-03-01 05:19</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BRHVheEFBVUpmNUpoZkw3RWJxNVFNRl9rc2FmVWtMd1FRNEJTSFJLNUxuRjVVZkcyTWs0VVZpYnE3d1pqaGpNTDlRTTRldlFQOS00Sg?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPeWFXQXpzMTFiWFQ2d3I3WVROOWlTS0hDYVg4TkRKZXo0d0JyWTBTT2VXSlBrODF1bWY1cnR6WWQ1X0xJVHVCOXI1bGVIQ280SExWNGRQLW9jMWpfaDY3eXhScDE1cVVMS0FwMTVMYUE2ZzlLWkhsUzVtR1Z5N2VXcXY2SG1FWTRrcmFiVGtpVjY4UQ?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Iran&#x27;s Supreme Leader Ayatollah Ali Khamenei is dead, state media says
+                    Iran Hits Back Across the Mideast, Targeting U.S. Bases and Allies
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran&#x27;s Supreme Leader Ayatollah Ali Khamenei is dead, state media says  BBC</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran Hits Back Across the Mideast, Targeting U.S. Bases and Allies  The New York Times</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    BBC
+                    The New York Times
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 05:46</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOdDBFclFhcUx5aHlyTHBTTUtfYnpzWE9PNkhDZUhxOWdCaS0xRjVqdDZyZHJBb0N5b2tuQTdBM1VCb0syV0FlU3BUZzYxS2ZtalRlb013c2hDaTBYMG5YaXBnejlNaF8zM242Um9wLTV0ajFDM1lrZTVtYUhTWFd0UGsxUW1obm8?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Live updates: Iranian Supreme Leader Ali Khamenei is dead
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Live updates: Iranian Supreme Leader Ali Khamenei is dead  NBC News</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    NBC News
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 05:40</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU5wREdhbWVwRTVTSUsxQnppdFdhRTIwQ3RIWHlFdlZieGlLRjRrSFN4MDM0ZThKMVFRX3hoV3ZiQXBRRVRCb2NWUFlsRjA5NUhrLWMzb2dmUXZTSUs1QzVsUW1mTmNWblNpTk4zcDhxd0pSdndIanlPTFJ5eU9MWUhHc3Q0eTdFTlctNkkyR0NPVnJubFdrdUlVazRublptYTI4c193UdIBrAFBVV95cUxNWWtZZG1UYl9DbkVTR2ZqZjBMbVRLZFZhRlFIVjF2V3dLMW1DQzl6anNFbkIxR1FwdkRlRVJWck9nRnFYQ1JNM1B3T0FneEwtWDJybVhmSE5jZnozOTZscEpNWldiTi1ScF9kalo4MzNtd2hGN3d0ZUNBWEkwQWd1OG92ckl1NFFLb2Vpc2pNUVRSNlBrYTJOZVl6T2lrNFo1ZnNEcTNyS2RtVTZY?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    &#x27;Bigger ramifications than Venezuela&#x27;: Markets brace for impact after U.S. strikes Iran
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">&#x27;Bigger ramifications than Venezuela&#x27;: Markets brace for impact after U.S. strikes Iran  CNBC</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    CNBC
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 11:08</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPbkVCTnhodk1jUmFmOWVwMlJ5dlN2RFFEd3ByUFQtS3lvLVJ6Z0FFZHpmb2szTERvOW5xV0pIVUxIazU4LUs4ci0wcVdJNU9PY3hNNl9Va0xveHh4T292SkdqdmF4akFxdHpFNS1yZTcyNHFKaGpoMHFQQWZ0Vkd3T1ZwMV9CaGFkaHY1anMtd1Q2bzVVcFFXUGJiWHdTZi1CbkVTSEdEOWRaYWZHaVVESGtuX1ZqcmYwREExaEZMb9IBxAFBVV95cUxPZzBGclI4NmZ2Zm1uWWkwNlJVRjdqNUg4X1RtaU1sbVl4MC1nd2h6QkVCckRIbDdVbXVqVUx5Njl5NWc4S2dLUHBYcnZON3VVZDZXNW9jdkJqUGoyTlpkdlR1N2JFRHRETjVUQmZOaGZwdEUzeURZY21MVnBkb1dxYUdSNzlzOGNsekljVXQzaHVWek5sT2JiUldFWV8yUF9Ba3Z2RGtabGc5NG5rNGVTMnZiWENQTnE5QVN0bENvUFhjU1JI?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    US, Israel attack Iran live: Khamenei killed, Iran Tehran launches attacks
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US, Israel attack Iran live: Khamenei killed, Iran Tehran launches attacks  Al Jazeera</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Al Jazeera
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 10:33</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMi5AJBVV95cUxNU0hQLUVRYTBGNTFqSHNXd3B0YXpOaTREZGdqNDNzaGhTR1RsZ254RTJEdzJ3b05qUE5XdEF5SlVaYUdDNjlJZEJsNFhUUVFlQnJ6X2JsTi1hZFNkRVRQQ1J0dHJqM0hnSGxZdXN3aTZXbjhfcm5EN0E4TzBvZ1llbnZyQnI4cThRRkdQbDR0aDM2cUdfRnlYaWhiSVZSTUd2dkVGQ1BNLU5DeWJ6dWhkcWU4cGxSSnp4MDFMVHAxb3RqSGIwclFxYVI4Z2JGNXkwVXJDTFc4M0c0TkVSdkt0MVJMSHBsR25GVTdzZjdvRVROZ1p2eG1LZC1NOHAzMDRtcVBUN1FOUXFwYmRnV05BWnlLTWxaNnNWdGIzYkUxLXo0RWNVVGc1RnBKaGZ6Snp1ZVQ3aTdLZXFXMzczOGJzTU1MZEFWQ1FEa3gyaDJvZTlucURZZV9lUVNpRE44NjlYQVhZNw?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Iran Confirms Supreme Leader Ayatollah Ali Khamenei Is Dead: Live Updates
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran Confirms Supreme Leader Ayatollah Ali Khamenei Is Dead: Live Updates  WSJ</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    WSJ
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 05:18</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPME1kUkk0ejFFdTV6S1pkdnZHdGlxVzZOVGxxa1A0bnUxZ091Ulh4dTkxNDlKWThfVnllMFZMZk5jLXg1b2twRW8yOHpQRzY1LUVoZEVWUEVlY2VPQ2s2MjFEOGpKYkNFTWNobXAtZFF2LTIyMGlNdU1ibWV3ZElpMW1CenBoNHN2bEwtcl9LZ0VVN1h1RmVONm1B?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    What we know about Iran strikes and retaliation
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What we know about Iran strikes and retaliation  Australian Broadcasting Corporation</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Australian Broadcasting Corporation
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 11:31</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNNm1uRkxWZkQwTy1CNk1jVDF3SGY1eTZDa1VmQUFiZEc3WlVQeEFOeWlvQkVQdmNRMUcxVEFXZDhCMlV2WWY2OEpTOTdBWUpTWjhHbGpMVTMtN2UybFhkWmVyVUtmdTRvNnFkQmJna0tRNHlCOFJsVERkY2Y2dUhqSHIxLUt0ay1NMVZpU05IMktmY1JBRmY5dDVDUWo?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Attack On US Navy Fifth Fleet Headquarters In Bahrain
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Attack On US Navy Fifth Fleet Headquarters In Bahrain  Military.com</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Military.com
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 20:37</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPUUREdE1PV0o1dmlDdUF5aVl1V1B1SmRLeEdVTmotNVhwVUotRXhHYVZjeV9GOWowbFEzS2xEeExqRHNTb1JkcnZDRWM5NFNvVHo0YzV1WlRTODJOcVUwZXZUQ294cVZkVHBTbWc3R3hJMFFpdVg1OV9sVlk1UEJ2N0JOdTQxUQ?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    US lawmakers condemn Trump over Iran strikes: ‘acts of war unauthorized by Congress’
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US lawmakers condemn Trump over Iran strikes: ‘acts of war unauthorized by Congress’  The Guardian</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    The Guardian
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 18:07</span>
+                <span class="text-sm text-gray-400">2026-03-01 04:35</span>
             </div>
         </a>
         
@@ -811,22 +785,142 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE55MG5wdTJrMFlNLWRENFBMZEFMcW0yN0E5dE1lajB6eGRWU1JNN2Y0cXhkbGlGdEpTcG1naHdqN00yLThGV3Qzd2RmYWhBa0tfS1I5ejRobjVGZw?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdDBlbHJfODNJMGpfSFlwd2Q0cHZEUWQ0Tk9YcTVDd2Qyc0tURHY3WGtTUG9fUmc1bmRpOUhuUkZjM2FaVUpXZ1pzLTJjQ0FCeEFnS09PVk9uOXEwOEhXQVJ4amxRclMwckpEZUM1R3Z4WTBNRGZIZkxfOFQxRHdnQkxFQ2FXMVdLRjhyX2FvQ3pwNFdLeGY0dm9XVVlxRzI1UUNaSFhVSjZsNEHSAbABQVVfeXFMTUNYSHgtSTMtaUFHVGx1RHJFUUZuZlBHMjJZYnlpT0NWclJOZEJya1dWY2Nuc3I1MEJGYjAxY0s4SllCZXV4Y1VnZGVtSnM5X0xkMlVLcmhsVnNGZkFNa092ZTJUdnlERWNCT1RyTEVlRGw2SFBpck5BYlA5Z3NCa2tmRlpuMHFsbmNDS2JNakZyazg0MVFkdHRnT3JpSmtXMXlEaklRdFNmeHJSOFhBbG0?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    What is happening in Iran? What we know about US-Israel attack and Tehran response
+                    Fact-checking statements made by Trump to justify U.S. strikes on Iran
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What is happening in Iran? What we know about US-Israel attack and Tehran response  BBC</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Fact-checking statements made by Trump to justify U.S. strikes on Iran  PBS</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    BBC
+                    PBS
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 03:57</span>
+                <span class="text-sm text-gray-400">2026-03-01 00:19</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNekNuSGNNSjBIUVQ2Y0tWUzFaNGZpMW1YSEZaaE9iQUdoNFljem5kQ2tUUkNGQldmX3NrM25CWDdCcWlTOThLdk14YlNQSFFORjdpRGhEU2taSGNVWFNheW9Jc1ZBU0R2WFpGZ3JfaGxGVl9vUE9DR3BZd2lBMGpxWmpVSUpjTkNmTkZod20wRF9hdGJRZ0JVeVVXT0NSdFZFZklHSkFBcW80aUlJbkRiVUwwLWxNNV9wVkVkcVJkNUdEUQ?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Experts react: The US and Israel just unleashed a major attack on Iran. What’s next?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Experts react: The US and Israel just unleashed a major attack on Iran. What’s next?  Atlantic Council</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Atlantic Council
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 14:09</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxONUxIak81ZUF2RktDN25uNVpNLU8zN0xXemtSQ1dLemhQS1VWYTRxOENBbGNsVTBBMGI1SEpOVms5VVk4cmlnaUg1QlZ2N0YxMEMzM3YtMi1LS080NWczeHZ4YV9nN1RXdHM1T0tLVWEtSl9IRXAta3lsNExmemVoeXN1TWxDOUJfOGtseGhyLXpLZ2FWbGRmLUE2aHRpMGVXSF95YVZhVk84M0kteVdURTlNTTdIbzhrLUg3ejFmZ3R6YUpDa0RCaHhtd20?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Iran targets US military bases in the Middle East with retaliatory strikes
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran targets US military bases in the Middle East with retaliatory strikes  France 24</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    France 24
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 16:27</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOLUFrS0pxbWZSMGZrcFA5d2lnTUJPbmYtZ3BWaFh3c21wZ3dFRGJOU0RfVEZXMVFiNmJ6NXNkR0NNRDhPb09yd3JmTDViZjd1dHdxOWFLdFdMbFJuSUo5NHJPemliOWVLRUowT2c2VHhscjd1VnJ2dHBjNzg5bjFjU2RPMHg4WGhtc2dVUG0xZ1BHd2pyMXNF?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    What to know about the new US-Israel attacks on Iran - Oregon Public Broadcasting
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What to know about the new US-Israel attacks on Iran  Oregon Public Broadcasting - OPB</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    OPB
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 23:11</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOOXpvWVp1ZkoxSHZhaXFiVlZXdUhhVG5va1JrV1ItVGZteFJqdXJob1AxMG5IbHlCcFJJSldLUHRZZVV1MG53ZkZtdDBaY1FTLXFXZERsODBwRXh1SEJNUlNNak5JUzF0ZVpDLWR5X3U1VHd5NmZYNGstb2FhZkFlUWxFdi1jVXRjWml0aGwtLWNEY0xENlE?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    U.S. and Israel attack Iran as Trump urges Iranians to &#x27;take over&#x27; the government
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">U.S. and Israel attack Iran as Trump urges Iranians to &#x27;take over&#x27; the government  NBC News</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    NBC News
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 22:58</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQLUJXZDl4eVN5LUUwa3VzbTcxdk9sWWJNSDR6SG9acXZ2b0dUa1Y2T3RjUVhWVHRMam5oOThFdnlSbUY5QUUxLVRuNTZObU1GTko4dmZLUlhrWTZsRGZ4RWVqV1IwNklTSTloZk9xRmVDeUdRT0pOcVdTbm5pajZCODJpblVlX3ZFejAxUjN5eWpqdWlSdWtQRmZSWm8yVnI3bHfSAacBQVVfeXFMTnFhODl4OW9ZckRRSDFjeGRfU0Fjb21rMjNhOThyaHJUS09QSmVPMVYxT1NnTHZnNTh5Q254TTlqOXFKZzJtUXNxa0N6bFRPMHkwc3ZjVmQ2Z21Ka2pGUW44OFFaU2I4OEdrR19LX1UxaHJ1clJZeEpSMlUzLTF1WFgzZXhqVU1kdXhkTkhuamI3T0FiUHcwNzJSLW5YRHRlWS1WbFRkYm8?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    World leaders react cautiously to U.S. and Israeli strikes on Iran
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">World leaders react cautiously to U.S. and Israeli strikes on Iran  PBS</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    PBS
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 17:20</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxONmlvTl9aemJDb1FfSmJxVU43dmItNG1qM1EtTVgxSjYxTXdhbUtNcjFKLVZ2YlA4VW1GNWFTSm55YlJRcVp5a2FlamVObUJ1Sk1xTVZjaU5XVkpOVzlydkcybTRYZm16ak5JYkNQQ19lZTd4OUtlUWJNRTBQcjI4N1NqVENLV3dCbnV2alhNNlhQZmhzN0E?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    What US bases did Iran target? Were any Americans killed?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">What US bases did Iran target? Were any Americans killed?  USA Today</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    USA Today
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 01:46</span>
             </div>
         </a>
         
@@ -1111,46 +1205,6 @@
         </a>
         
 
-        <a href="https://www.aljazeera.com/news/2026/3/1/netanyahus-war-analysts-say-trumps-iran-strikes-benefit-israel-not-us?traffic_source=rss" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    Netanyahu’s war? Analysts say Trump’s Iran strikes benefit Israel, not US
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">War with Iran contradicts the US president&#x27;s own criticism of regime change policies in the Middle East, analysts say.</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Al Jazeera - Middle East
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 02:14</span>
-            </div>
-        </a>
-        
-
-        <a href="https://www.aljazeera.com/news/2026/3/1/us-strikes-on-iran-lead-to-renewed-demands-for-war-powers-legislation?traffic_source=rss" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    US strikes on Iran lead to renewed demands for war powers legislation
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Democratic lawmakers have largely condemned the strikes on Iran, emphasising the lack of congressional approval.</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Al Jazeera - Middle East
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 01:48</span>
-            </div>
-        </a>
-        
-
         <a href="https://www.aljazeera.com/video/newsfeed/2026/3/1/new-yorkers-protest-us-strikes-on-iran?traffic_source=rss" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -1187,26 +1241,6 @@
                     Al Jazeera - Middle East
                 </span>
                 <span class="text-sm text-gray-400">2026-03-01 00:05</span>
-            </div>
-        </a>
-        
-
-        <a href="https://www.aljazeera.com/news/2026/2/28/how-have-us-politicians-reacted-to-the-attack-on-iran?traffic_source=rss" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    How have US politicians reacted to the attack on Iran?
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Republicans largely rally behind Trump&#x27;s strikes on Iran, while Democrats fail to offer singular message of opposition.</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Al Jazeera - Middle East
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 23:56</span>
             </div>
         </a>
         
@@ -1270,6 +1304,46 @@
             </div>
         </a>
         
+
+        <a href="https://www.aljazeera.com/video/newsfeed/2026/2/28/trump-khamenei-dead-after-us-strikes-iran?traffic_source=rss" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    Trump: Khamenei dead after US strikes Iran
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">US President Donald Trump says Iran’s Supreme Leader Ayatollah Ali Khamenei was killed in joint US-Israeli strikes.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Al Jazeera - Middle East
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 22:56</span>
+            </div>
+        </a>
+        
+
+        <a href="https://www.aljazeera.com/video/inside-story/2026/2/28/what-dangers-do-the-us-and-israeli-attacks-on-iran-pose?traffic_source=rss" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    What dangers do the US and Israeli attacks on Iran pose?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">Iran has retaliated, firing at Israel, as well as US military assets, in the Middle East.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    Al Jazeera - Middle East
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 22:37</span>
+            </div>
+        </a>
+        
                 
             </div>
         </section>
@@ -1302,22 +1376,22 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFBaaGd0dG5aLVpSMUc0UzBObDlfekpUR2Z0Q3hDYmo4NEVtT0VNTkhTVGFoQUpTNkdaaVJZNFhwQk5NbExiUG05dExYUko?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDTVY5NlQzbGtTWDVuX19UUVlpa2J5a3hQd3lIMVFIZW9iLVdxOVhJM1VyaHRJYnZxVlpQOWRpbFB2eEUxaGJsc1ppWmlsZTl2cFAta0Jn?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    3 ร้านทองดัง ประกาศงดซื้อ-ขายชั่วคราว เหตุสหรัฐ-อิสราเอล โจมตีอิหร่าน
+                    ไอซ์ฮอกกี้สาวลุ้นระทึก หนีสงครามสหรัฐ-อิหร่าน เปลี่ยนเส้นทางบินกลับไทย
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">3 ร้านทองดัง ประกาศงดซื้อ-ขายชั่วคราว เหตุสหรัฐ-อิสราเอล โจมตีอิหร่าน  Sanook</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">ไอซ์ฮอกกี้สาวลุ้นระทึก หนีสงครามสหรัฐ-อิหร่าน เปลี่ยนเส้นทางบินกลับไทย  Thaipost.net</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Sanook
+                    Thaipost.net
                 </span>
-                <span class="text-sm text-gray-400">2026-02-28 13:04</span>
+                <span class="text-sm text-gray-400">2026-03-01 04:21</span>
             </div>
         </a>
         
@@ -1417,7 +1491,7 @@
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
                     สำนักข่าวอินโฟเควสท์
                 </span>
-                <span class="text-sm text-gray-400">2026-03-01 03:58</span>
+                <span class="text-sm text-gray-400">2026-03-01 04:01</span>
             </div>
         </a>
         
@@ -1522,26 +1596,6 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UemVYVjJocTMzR0JDLWp0RkJPRWhUQ2xKVnY4aG1UMUxiY09hNjNyMWlTd2ExZXRjVG1tbkpwaGxMSk1oZXNzUXdCbXJVWXVxbEV5c2dR?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    โลกเดือด! &quot;อิสราเอล&quot; เปิดฉากถล่ม &quot;อิหร่าน&quot; หลังเจรจานิวเคลียร์ไร้ข้อสรุป
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">โลกเดือด! &quot;อิสราเอล&quot; เปิดฉากถล่ม &quot;อิหร่าน&quot; หลังเจรจานิวเคลียร์ไร้ข้อสรุป  สยามรัฐ</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    สยามรัฐ
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 07:13</span>
-            </div>
-        </a>
-        
-
         <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NTTBXYm1lbkN0cko5dXNEaVN0alByU1dLdVlzUnk2N3ZfRHVVbmhNSy1ubjZkU0Q2Q2ZOcUcyNTVnLUhLcUNlbWtsaHc2dVktWVpYTmdn?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -1558,6 +1612,26 @@
                     LINE TODAY
                 </span>
                 <span class="text-sm text-gray-400">2026-02-28 16:00</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UemVYVjJocTMzR0JDLWp0RkJPRWhUQ2xKVnY4aG1UMUxiY09hNjNyMWlTd2ExZXRjVG1tbkpwaGxMSk1oZXNzUXdCbXJVWXVxbEV5c2dR?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    โลกเดือด! &quot;อิสราเอล&quot; เปิดฉากถล่ม &quot;อิหร่าน&quot; หลังเจรจานิวเคลียร์ไร้ข้อสรุป
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">โลกเดือด! &quot;อิสราเอล&quot; เปิดฉากถล่ม &quot;อิหร่าน&quot; หลังเจรจานิวเคลียร์ไร้ข้อสรุป  สยามรัฐ</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    สยามรัฐ
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 07:13</span>
             </div>
         </a>
         
@@ -1602,6 +1676,26 @@
         </a>
         
 
+        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZYmd5TnpKN0hZaGZUVFNDZVBZM0pwSVBFTHo0TndUUFhHQnFtLXdkcXZuY0dlOWU0V3pQalJZRzhna2hjUmw2elhPMnRtWFBMUzRRWnZR?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    “จีน” ประณามการโจมตีสหรัฐ–อิสราเอลต่ออิหร่าน เรียกร้องหยุดยิงทันที พร้อมเร่งอพยพพลเมือง
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">“จีน” ประณามการโจมตีสหรัฐ–อิสราเอลต่ออิหร่าน เรียกร้องหยุดยิงทันที พร้อมเร่งอพยพพลเมือง  LINE TODAY</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    LINE TODAY
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 05:55</span>
+            </div>
+        </a>
+        
+
         <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jejRqRW56TkJ5cEdDS3h5Y01NNlZNM3hFR1Rlc0hUV0NGb09JM1UzUERNZEpzU0ZFN0FpYU45S3YtbmNJTThac21LbFNERDBGRHZ6TUE4MA?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -1618,86 +1712,6 @@
                     Thaipost.net
                 </span>
                 <span class="text-sm text-gray-400">2026-03-01 05:47</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SYjd2R3d4Sm1fN3V0QWxCOWt4U1J2cjk1XzBzZEtvQkc0dklPMkJ6UnlhbWgwblRscjd4Zkd1SnFZeHlydUYzUHcyaTZibTlvbmRZZlh5cVRPQdIBX0FVX3lxTE9tbVRCRGx6M0hhZldIN3ZHTGVBaG5pMzRXcUpYNFFmWVZRamJza0c0UWhBbEZ3ZmtEeFJ6SVUwdXBpLVdNMDU5emdtSEhTbnpUWVB5VWd0N2Fkb29CVnlJ?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    เหตุใด สหรัฐฯ-อิสราเอล เลือกโจมตีอิหร่านตอนนี้ ?
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">เหตุใด สหรัฐฯ-อิสราเอล เลือกโจมตีอิหร่านตอนนี้ ?  BBC</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    BBC
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 04:19</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zUnByNkV4ZzRvTnpiaWRhMEtlRS1iLXg5QnZWWERXZ01QSEtfOUZ3Y093blBBemRWSVBHemc3MFlScVY0OFdyU0dPQ3B1blF6aWdjZTQ5aUFZZ3c?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    ทรัมป์ยืนยันเอง เปิดปฏิบัติการทางทหารในอิหร่าน ปกป้องชาวอเมริกันจากภัยคุกคามใกล้ตัว
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">ทรัมป์ยืนยันเอง เปิดปฏิบัติการทางทหารในอิหร่าน ปกป้องชาวอเมริกันจากภัยคุกคามใกล้ตัว  Thairath</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    Thairath
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 08:00</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BUnVEVFVNQm80NkVrZG1KaDBSQklhQ1l0Y1NZdURFRDB3aG5OSzdvS3ZyN0VFdGdfZFRVajRsMWRtb3BMd0dpZmFHQVhveDJVZVRxZ09n?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    ทำไม สหรัฐฯ โจมตีอิหร่าน? | การเงินธนาคาร
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">ทำไม สหรัฐฯ โจมตีอิหร่าน? | การเงินธนาคาร  LINE TODAY</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    LINE TODAY
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 04:40</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE80VURrQUVickNPbks3MTJSeWZacTNDNUdORDdXaE94ekJwNlhnRHBVdHNWeW5DaXNVN2hNYkp2cjI0N0hGQjdMXy1pSTlRakZ3NUxFN0Jn?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    สหรัฐฯ ผนึกอิสราเอล เปิดฉากถล่มอิหร่าน INVX มองโอกาส 60% จบเร็ว น้ำมันขึ้นชั่วคราวสู่ 80 ดอลลาร์
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">สหรัฐฯ ผนึกอิสราเอล เปิดฉากถล่มอิหร่าน INVX มองโอกาส 60% จบเร็ว น้ำมันขึ้นชั่วคราวสู่ 80 ดอลลาร์  LINE TODAY</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    LINE TODAY
-                </span>
-                <span class="text-sm text-gray-400">2026-02-28 09:31</span>
             </div>
         </a>
         
@@ -1722,6 +1736,66 @@
         </a>
         
 
+        <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SYjd2R3d4Sm1fN3V0QWxCOWt4U1J2cjk1XzBzZEtvQkc0dklPMkJ6UnlhbWgwblRscjd4Zkd1SnFZeHlydUYzUHcyaTZibTlvbmRZZlh5cVRPQdIBX0FVX3lxTE9tbVRCRGx6M0hhZldIN3ZHTGVBaG5pMzRXcUpYNFFmWVZRamJza0c0UWhBbEZ3ZmtEeFJ6SVUwdXBpLVdNMDU5emdtSEhTbnpUWVB5VWd0N2Fkb29CVnlJ?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    เหตุใด สหรัฐฯ-อิสราเอล เลือกโจมตีอิหร่านตอนนี้ ?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">เหตุใด สหรัฐฯ-อิสราเอล เลือกโจมตีอิหร่านตอนนี้ ?  BBC</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    BBC
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 04:19</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BUnVEVFVNQm80NkVrZG1KaDBSQklhQ1l0Y1NZdURFRDB3aG5OSzdvS3ZyN0VFdGdfZFRVajRsMWRtb3BMd0dpZmFHQVhveDJVZVRxZ09n?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    ทำไม สหรัฐฯ โจมตีอิหร่าน? | การเงินธนาคาร
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">ทำไม สหรัฐฯ โจมตีอิหร่าน? | การเงินธนาคาร  LINE TODAY</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    LINE TODAY
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 04:40</span>
+            </div>
+        </a>
+        
+
+        <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oZUNaMjN3eGMyUjhBM1hBMHpJT1FTZFN4VUNlQnVRUkx4SmZDSzIxV0xBcFdIWFAxUDRQbW9feFdYOXMzVjU2MDNDMWlqZGpoTUw5OHA1VzREMHc?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    การ โจมตีอิหร่าน ส่งผลต่อ เศรษฐกิจโลก และ ตลาดน้ำมัน อย่างไร?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">การ โจมตีอิหร่าน ส่งผลต่อ เศรษฐกิจโลก และ ตลาดน้ำมัน อย่างไร?  thestandard.co</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    thestandard.co
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 03:04</span>
+            </div>
+        </a>
+        
+
         <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1IbjBYc3Z1c2sza1pJeXVwOENIdE5rVzBDbFVpOGJwUnYwbDRpSGJnUlljZHBIci02S2tqYlBxTVZWU0VoVFU4NFhoZk5rSXpwTDgyQm1xZks?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -1738,26 +1812,6 @@
                     Thaipost.net
                 </span>
                 <span class="text-sm text-gray-400">2026-03-01 05:21</span>
-            </div>
-        </a>
-        
-
-        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNa05MZ1RpLUowTUQ2NGpHSThEdlRMY3hiVmU1eHUyQ2NIWnJmc25NZkRDMlNwZWlFV1gxb0Y0aldjMDNOQWhkejNqQk0welpIcF9PU1c0em13LUN2TnlxMXd6QU9hZ3hiQVFoZk9PVEFlRVI2dkcySjVPNERVTng0SWJsN2c2OEc4RlRLaHJrWHozM0k0Wm5Zb3NuTnB0Wkw0ZDZfSkNKVzFxdmN2c0poSFRtYVpETnlOTGs4bnBabWFsWDU1LWc?oc=5" target="_blank" rel="noopener noreferrer"
-           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
-            <div class="flex items-start justify-between gap-3">
-                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    รวมสายการบินระงับเที่ยวบิน หลังสหรัฐฯ-อิสราเอลโจมตีอิหร่าน กระทบแล้วอย่างน้อย 8 ประเทศ
-                </h3>
-                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                </svg>
-            </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">รวมสายการบินระงับเที่ยวบิน หลังสหรัฐฯ-อิสราเอลโจมตีอิหร่าน กระทบแล้วอย่างน้อย 8 ประเทศ  pptvhd36</p>
-            <div class="flex items-center gap-3 mt-3">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    pptvhd36
-                </span>
-                <span class="text-sm text-gray-400">2026-03-01 03:19</span>
             </div>
         </a>
         
@@ -1802,6 +1856,26 @@
         </a>
         
 
+        <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vQUh3UzRFUTBSYzRmanpDaHg2SWNGZG45QURNU010clRKVXA4eE11NGV0NHlUaWdZZDhYMk0xbHFjcnE1V203aXRzRTJibTZRWEFTcmZwODBlNVR6YlBsbA?oc=5" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    สหรัฐ-อิสราเอลโจมตีอิหร่าน ป่วนการบินโลก ระงับ/เลื่อนเที่ยวบิน
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">สหรัฐ-อิสราเอลโจมตีอิหร่าน ป่วนการบินโลก ระงับ/เลื่อนเที่ยวบิน  posttoday</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    posttoday
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 22:50</span>
+            </div>
+        </a>
+        
+
         <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aZFVjRjUtX2ZLWEpuWTZ2MkxUcU1MdkVaZGpsakFaaFdTM3Z5alN6YXVTZWZhOEE2ZHUxbzNYRmttaDg3SjlJNnB3d3pwNFdQdmJuOGoySHg?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
@@ -1822,42 +1896,242 @@
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1YLS02dENweFNhY2EyS2hmajBOdGp3NXM2T2dzX21XbXBIaDNmRVRPb3VySUF5eXhibm1rWjRDSTJYXzZpTzczbU9oZnJVUUZ5aXNXckRlYlJZUElUNkRkN29R?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFBaaGd0dG5aLVpSMUc0UzBObDlfekpUR2Z0Q3hDYmo4NEVtT0VNTkhTVGFoQUpTNkdaaVJZNFhwQk5NbExiUG05dExYUko?oc=5" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    SET เสี่ยงร่วงเกิน 50 จุด! โบรกเตือน หาก&#x27;สงครามอิสราเอล-อิหร่าน&#x27; บานปลาย
+                    3 ร้านทองดัง ประกาศงดซื้อ-ขายชั่วคราว เหตุสหรัฐ-อิสราเอล โจมตีอิหร่าน
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">SET เสี่ยงร่วงเกิน 50 จุด! โบรกเตือน หาก&#x27;สงครามอิสราเอล-อิหร่าน&#x27; บานปลาย  bangkokbiznews</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">3 ร้านทองดัง ประกาศงดซื้อ-ขายชั่วคราว เหตุสหรัฐ-อิสราเอล โจมตีอิหร่าน  Sanook</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    bangkokbiznews
+                    Sanook
                 </span>
-                <span class="text-sm text-gray-400">2026-02-28 14:29</span>
+                <span class="text-sm text-gray-400">2026-02-28 13:04</span>
             </div>
         </a>
         
 
-        <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GS2xSNVFmdlpvclhFbXJLSWVQYmI1X0ZBZDZRcURVMEhhX0ZEYjUxM1BROWRlU2RvdkhVZVNjSVJJbC1JSzBLTlNtdzhwdWJoS0F6OGFTOFJfVEluV3o0?oc=5" target="_blank" rel="noopener noreferrer"
+        <a href="https://thestandard.co/cia-israel-kill-khamenei/" target="_blank" rel="noopener noreferrer"
            class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
             <div class="flex items-start justify-between gap-3">
                 <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
-                    อิสราเอล &quot;Pre-Emptive Attack&quot; เปิดฉากชิงโจมตีอิหร่านก่อน ทรัมป์ยืนยันปฏิบัติการใหญ่
+                    CIA เล็งเป้า อิสราเอลลั่นไก! เปิดเบื้องหลังสังหาร ‘คาเมเนอี’ ผู้นำสูงสุดอิหร่าน
                 </h3>
                 <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
             </div>
-            <p class="text-gray-500 text-sm mt-2 line-clamp-2">อิสราเอล &quot;Pre-Emptive Attack&quot; เปิดฉากชิงโจมตีอิหร่านก่อน ทรัมป์ยืนยันปฏิบัติการใหญ่  ประชาชาติธุรกิจ</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+วันนี้ (1 มีนาคม) The New York Times รายงานเบื้องหลังกา […]
+The post CIA เล็งเป้า อิสราเอลลั่นไก! เปิดเบื้องหลังสังหาร ‘คาเมเนอี’ ผู้นำสูงสุดอิหร่าน appeared first on THE STANDARD.</p>
             <div class="flex items-center gap-3 mt-3">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
-                    ประชาชาติธุรกิจ
+                    THE STANDARD - World
                 </span>
-                <span class="text-sm text-gray-400">2026-02-28 06:47</span>
+                <span class="text-sm text-gray-400">2026-03-01 05:43</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/iran-khamenei-killed-us-israel-attack/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    อิหร่านยืนยันคาเมเนอี ถูกสังหารหลังการโจมตีของสหรัฐฯ และอิสราเอล ไว้อาลัยทั่วประเทศ 40 วัน
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+สื่อทางการอิหร่าน ทั้งสำนักข่าว Tasnim และสำนักข่าว Far […]
+The post อิหร่านยืนยันคาเมเนอี ถูกสังหารหลังการโจมตีของสหรัฐฯ และอิสราเอล ไว้อาลัยทั่วประเทศ 40 วัน appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 02:44</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/trump-iran-leader-dead-us-israel/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    ทรัมป์ประกาศ ผู้นำสูงสุดอิหร่านเสียชีวิตแล้วจากการโจมตีของสหรัฐฯ และอิสราเอล
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+โดนัลด์ ทรัมป์ ประธานาธิบดีสหรัฐฯ ประกาศว่า อยาตอลเลาะห […]
+The post ทรัมป์ประกาศ ผู้นำสูงสุดอิหร่านเสียชีวิตแล้วจากการโจมตีของสหรัฐฯ และอิสราเอล appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-03-01 01:43</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/iran-missile-middle-east-israel-us/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    อิหร่านยิงขีปนาวุธถล่มหลายประเทศตะวันออกกลาง ตอบโต้อิสราเอล-สหรัฐฯ ปฏิบัติการโจมตี
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+ความคืบหน้าสถานการณ์ในตะวันออกกลาง หลังอิสราเอลและสหรัฐ […]
+The post อิหร่านยิงขีปนาวุธถล่มหลายประเทศตะวันออกกลาง ตอบโต้อิสราเอล-สหรัฐฯ ปฏิบัติการโจมตี appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 10:55</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/trump-iran-war-nuclear-weapons/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    ทรัมป์ ประกาศเปิดปฏิบัติการสู้รบอิหร่านครั้งใหญ่ ขจัดภัยคุกคามเร่งด่วน ย้ำ “ระบอบก่อการร้าย ต้องไม่มีอาวุธนิวเคลียร์”
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+ประธานาธิบดีโดนัลด์ ทรัมป์ โพสต์คลิปวิดีโอแถลงการณ์ความ […]
+The post ทรัมป์ ประกาศเปิดปฏิบัติการสู้รบอิหร่านครั้งใหญ่ ขจัดภัยคุกคามเร่งด่วน ย้ำ “ระบอบก่อการร้าย ต้องไม่มีอาวุธนิวเคลียร์” appeared fir</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 09:49</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/israel-iran-attack-tehran-usa/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    อิสราเอลเปิดฉากโจมตีก่อนใส่อิหร่าน ระเบิดดังสนั่นเตหะราน สื่ออ้างสหรัฐฯ ปฏิบัติการร่วม
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+อิสราเอล คาทซ์ (Israel Katz) รัฐมนตรีว่าการกระทรวงกลาโห […]
+The post อิสราเอลเปิดฉากโจมตีก่อนใส่อิหร่าน ระเบิดดังสนั่นเตหะราน สื่ออ้างสหรัฐฯ ปฏิบัติการร่วม appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 07:28</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/bill-clinton-epstein-testimony/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    บิล คลินตัน เข้าให้การสภาผู้แทนฯ ไต่สวนปมสัมพันธ์เอปสตีน ยืนยัน “ไม่ได้ทำผิด”
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+บิล คลินตัน อดีตประธานาธิบดีสหรัฐฯ ยืนยันปฏิเสธการกระทำ […]
+The post บิล คลินตัน เข้าให้การสภาผู้แทนฯ ไต่สวนปมสัมพันธ์เอปสตีน ยืนยัน “ไม่ได้ทำผิด” appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-28 05:26</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/pakistan-afghanistan-war-escalation/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    ปากีสถานทิ้งระเบิดถล่มอัฟกานิสถาน ชนวนเหตุจากอะไร และสงครามจะปะทุหรือไม่?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+กองทัพปากีสถานส่งฝูงบินรบทิ้งระเบิดโจมตีข้ามพรมแดนใส่เป […]
+The post ปากีสถานทิ้งระเบิดถล่มอัฟกานิสถาน ชนวนเหตุจากอะไร และสงครามจะปะทุหรือไม่? appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-27 07:49</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/us-iran-talks-no-deal-trump/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    เจรจา ‘สหรัฐฯ–อิหร่าน’ ยังไร้ข้อตกลง เตรียมคุยต่อสัปดาห์หน้า ขณะทรัมป์ชั่งน้ำหนักปฏิบัติการทหาร
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+การเจรจาระหว่างสหรัฐอเมริกากับอิหร่าน ณ กรุงเจนีวา สิ้น […]
+The post เจรจา ‘สหรัฐฯ–อิหร่าน’ ยังไร้ข้อตกลง เตรียมคุยต่อสัปดาห์หน้า ขณะทรัมป์ชั่งน้ำหนักปฏิบัติการทหาร appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-27 03:13</span>
+            </div>
+        </a>
+        
+
+        <a href="https://thestandard.co/us-west-bank-consulate/" target="_blank" rel="noopener noreferrer"
+           class="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-snug flex-1">
+                    สหรัฐฯ เตรียมเปิดกงสุลสัญจรในเขตเวสต์แบงก์ครั้งแรก ทำไมทั่วโลกถึงมองว่า ‘ผิดกฎหมาย’ ?
+                </h3>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+สถานเอกอัครราชทูตสหรัฐอเมริกาในอิสราเอลเผย เตรียมจัดตั้ […]
+The post สหรัฐฯ เตรียมเปิดกงสุลสัญจรในเขตเวสต์แบงก์ครั้งแรก ทำไมทั่วโลกถึงมองว่า ‘ผิดกฎหมาย’ ? appeared first on THE STANDARD.</p>
+            <div class="flex items-center gap-3 mt-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                    THE STANDARD - World
+                </span>
+                <span class="text-sm text-gray-400">2026-02-26 04:15</span>
             </div>
         </a>
         
