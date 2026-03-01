@@ -26,6 +26,12 @@ python scraper.py
 open index.html
 ```
 
+## การทำงานแบบอัตโนมัติ (GitHub Actions)
+โปรเจกต์นี้ตั้งค่าให้อัปเดตอัตโนมัติผ่าน GitHub Actions:
+- ข้อมูลจำทำการดึงใหม่ทุกๆ 2 ชั่วโมง (หรือตามที่ตั้งค่าใน `.github/workflows/update_news.yml`)
+- หลังจากดึงข่าวมาใหม่ ระบบจะนำไฟล์ `index.html` ขึ้นมารันบน Repo และทำเว็บออนไลน์ผ่าน GitHub Pages
+- หากต้องการดูเว็บออนไลน์ เข้าไปที่แท็บ [Settings > Pages ใน GitHub] เพื่อตั้งค่าให้ Branch `main` โฮสต์ผ่านหน้า Pages
+
 ## Tech Stack
 
 - **Python** — requests, BeautifulSoup4, feedparser
